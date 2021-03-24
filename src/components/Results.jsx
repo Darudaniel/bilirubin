@@ -16,7 +16,11 @@ const Results = (props) => {
 
   let result
 
-  if (data.edadGestacional > 37 && data.pesoAlNacer > 2500 && data.bilirrubinaTotal < 11) {
+  if (
+         data.pesoAlNacer > 2500     
+      && data.edadGestacional > 37   
+      && data.bilirrubinaTotal < 11
+      ){
     result = observacion
   }
   console.log(tiempoTranscurrido)
